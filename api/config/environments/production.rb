@@ -87,6 +87,7 @@ Rails.application.configure do
   allowed_hosts << "healthcheck.railway.app"
 
   config.hosts.concat(allowed_hosts.uniq)
+  config.hosts << /\A.*\.up\.railway\.app\z/
 
   # Skip host authorization check for the default health check endpoint.
   config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
