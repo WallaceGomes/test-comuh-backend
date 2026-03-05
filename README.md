@@ -12,7 +12,7 @@
 - [x ] Banco de dados: [PostgreSQL]
 - [x ] Testes: [Minitest, Vitest]
 ### Deploy
-- [x ] URL da aplicação: [[URL](https://faithful-purpose-production-5ef7.up.railway.app/communities)]
+- [x ] URL da aplicação: [[URL](https://test-comuh-backend.vercel.app/)]
 - [x ] Seeds executados (dados de exemplo visíveis)
 ### Funcionalidades - API
 - [x ] POST /api/v1/messages (criar mensagem + sentiment)
