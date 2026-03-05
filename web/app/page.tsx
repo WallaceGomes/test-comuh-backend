@@ -9,7 +9,10 @@ type Community = {
 };
 
 async function fetchCommunities(): Promise<Community[]> {
-  const apiBaseUrl = process.env.API_INTERNAL_BASE_URL || "http://api:3000/api/v1";
+  const apiBaseUrl =
+    process.env.API_INTERNAL_BASE_URL ||
+    process.env.NEXT_PUBLIC_API_BASE_URL ||
+    "http://api:3000/api/v1";
 
   const response = await fetch(`${apiBaseUrl}/communities`, {
     cache: "no-store",

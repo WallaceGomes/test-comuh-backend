@@ -36,6 +36,13 @@ As variáveis ficam no arquivo `.env` na raiz do projeto.
 - `NEXT_PUBLIC_API_BASE_URL`: URL pública usada no browser para chamadas da API (ex.: `http://localhost:3000/api/v1`)
 - `API_INTERNAL_BASE_URL` (opcional): URL interna usada no server-side rendering. Se não for definida, o fallback no container é `http://api:3000/api/v1`
 
+### Deploy na Vercel
+
+No deploy da Vercel, configure **as duas** variáveis com a URL pública do backend:
+
+- `NEXT_PUBLIC_API_BASE_URL=https://SEU_BACKEND/api/v1`
+- `API_INTERNAL_BASE_URL=https://SEU_BACKEND/api/v1`
+
 ## Executar testes (frontend)
 
 ```bash
