@@ -103,6 +103,9 @@ AWS Comprehend:
 Frontend -> API:
 
 - `NEXT_PUBLIC_API_BASE_URL`
+- `FRONTEND_ALLOWED_ORIGINS` (lista separada por vírgula para CORS, ex.: `https://test-comuh-backend.vercel.app`)
+- `CORS_ALLOW_VERCEL_PREVIEWS` (`true` para permitir previews `*.vercel.app`)
+- `CORS_VERCEL_PROJECT_SLUG` (opcional; restringe previews ao slug do projeto)
 
 ## Sentiment analysis (AWS Comprehend)
 
