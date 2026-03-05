@@ -12,7 +12,7 @@
 - [x ] Banco de dados: [PostgreSQL]
 - [x ] Testes: [Minitest, Vitest]
 ### Deploy
-- [x ] URL da aplicação: [URL]
+- [x ] URL da aplicação: [[URL](https://faithful-purpose-production-5ef7.up.railway.app/communities)]
 - [x ] Seeds executados (dados de exemplo visíveis)
 ### Funcionalidades - API
 - [x ] POST /api/v1/messages (criar mensagem + sentiment)
@@ -40,4 +40,4 @@
 - [x ] Como rodar seeds
 - [x ] Endpoints da API documentados
 - [ ] Screenshot ou GIF da interface (opcional)
-### ⏰ Entregue em: 01/12/2025
+### ⏰ Entregue em: 05/03/2026
