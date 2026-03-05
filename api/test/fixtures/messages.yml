@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  community: one
+  parent_message:
+  content: MyText
+  user_ip: 10.0.0.1
+  ai_sentiment_score: 1.5
+
+two:
+  user: two
+  community: two
+  parent_message:
+  content: MyText
+  user_ip: 10.0.0.2
+  ai_sentiment_score: 1.5

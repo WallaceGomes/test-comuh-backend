@@ -1,0 +1,157 @@
+{
+  "info": {
+    "_postman_id": "a86ae09c-88f9-42c9-85ff-73e526eccd29",
+    "name": "Teste Comuh",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12148186"
+  },
+  "item": [
+    {
+      "name": "Get Top Messages",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/api/v1/communities/:id/messages/top",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "communities",
+            ":id",
+            "messages",
+            "top"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "980190962"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Analitics",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}} /api/v1/analytics/suspicious_ips?min_users=2",
+          "host": [
+            "{{host}} "
+          ],
+          "path": [
+            "api",
+            "v1",
+            "analytics",
+            "suspicious_ips"
+          ],
+          "query": [
+            {
+              "key": "min_users",
+              "value": "2",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Communities",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/api/v1/communities",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "communities"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Message",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"john_doe\",\r\n    \"community_id\": 980190962,\r\n    \"content\": \"Tá tudo normal muito ruim\",\r\n    \"user_ip\": \"192.168.1.1\"\r\n    // \"parent_message_id\": null // opcional, apenas para comentários\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/api/v1/messages",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "messages"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "React to a message",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"message_id\": 980190963,\r\n    \"user_id\": 980190966,\r\n    \"reaction_type\": \"insightful\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/api/v1/reactions",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "reactions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Heathcheck",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/up",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "up"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
